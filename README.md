@@ -8,12 +8,24 @@ Avaialble Demo at:
 http://formbuilder.tdjangoy.webfactional.com/
 
 pyscripts folder has a simple Flask server to host the DEMO app. 
-to Run the Demo locally::
+#### Runing the Demo locally::
+
+##### Using Flask:
 	
 	$ cd <your_repo_path>/pyscripts
 	$ python flask_app.py 
   
 For more detail on Flask, see: http://flask.pocoo.org/
+
+##### Using NPX and http-server
+
+If you prefer not to use Flask or need a simple static server, you can use http-server through npx:
+
+	$ cd <your_repo_path>
+  $ npm run build
+	$ npx http-server ./ -p 8080 
+
+This will serve the project at http://localhost:8080. Navigate to this URL in your web browser to view the demo.
 
 
 ### New development on 2017-08-14
@@ -29,5 +41,3 @@ TODO/Limitations:
 
 Bootstrap V4 formbuilder demo:
 http://formbuilder-v4.tdjangoy.webfactional.com/
-
-
